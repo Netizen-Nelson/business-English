@@ -28,6 +28,21 @@
       padding: 16px;
       line-height: 1.5;
     }
+
+@media (hover: hover) {
+  .tooltip:hover .info {
+    display: block;
+  }
+}
+
+@media (hover: none) {
+  .info {
+    display: block;
+    position: static; /* 讓資訊排在文字流中，而不是飄在上面 */
+    border-left: 3px solid #007bff;
+    padding-left: 10px;
+  }
+}
   </style>
 
 <script src="https://cdn.jsdelivr.net/gh/Netizen-Nelson/web-dev/fill-in-blanks.js"></script>
